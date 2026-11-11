@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #1f1c18 0%, #2d1f10 50%, #6b3e0e 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  padding: 20px;
+  color: #fff;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.05); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 400px; 
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #f5a623; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+label {
+  font-size: 13px;
+  color: #bbb;
+  margin-bottom: 5px;
+  margin-left: 2px;
+}
+
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: rgba(0, 0, 0, 0.3); /* Темный полупрозрачный фон */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+
+input::placeholder {
+  color: #777;
+}
+
+
+input:focus {
+  border-color: #f5a623;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(245, 166, 35, 0.2);
+}
+
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  background: linear-gradient(90deg, #d48a1a 0%, #f5a623 100%); /* Оранжевый градиент */
+  border: none;
+  border-radius: 8px;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(245, 166, 35, 0.4);
+}
+
+
+button:active {
+  transform: translateY(0);
+}
+
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
